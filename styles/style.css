@@ -78,6 +78,9 @@ a {
 .hero-grid {
   display: grid;
   gap: 10px;
+  padding: 40px;
+  border-radius: var(--radius-30);
+  background-color: var(--color-additional);
   grid-template-columns: repeat(4, minmax(0, 1fr));
   grid-template-rows: repeat(2, minmax(260px, auto));
   grid-template-rows: 463px 463px;
@@ -98,10 +101,17 @@ a {
 }
 .hero-grid__card {
   border-radius: var(--radius-30);
-  background-color: var(--color-additional);
+  background-color: var(--color-white);
 }
 .hero-grid__card--main {
   grid-area: main;
+}
+.hero-grid__card--main .hero-main {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px;
 }
 .hero-grid__card--main .hero-main__text {
   display: flex;
@@ -130,8 +140,91 @@ a {
   text-decoration: none;
   border-radius: 24px;
 }
+.hero-grid__card--main .hero-main__subtitle {
+  font-weight: 400;
+  font-size: 31px;
+  line-height: 100%;
+  margin-top: 16px;
+}
+.hero-grid__card--main .hero-main__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hero-grid__card--main .hero-main__stats {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 60px;
+       column-gap: 60px;
+}
+.hero-grid__card--main .hero-main__stat span {
+  display: block;
+}
+.hero-grid__card--main .hero-main__stat-value {
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 100%;
+}
+.hero-grid__card--main .hero-main__stat-label {
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 100%;
+}
+.hero-grid__card--main .hero-main__devices {
+  display: flex;
+  align-items: center;
+}
+.hero-grid__card--main .hero-main__device {
+  width: 71px;
+  height: 71px;
+  border-radius: 50%;
+  border: 2px solid var(--color-white);
+}
 .hero-grid__card--offers {
   grid-area: offers;
+}
+.hero-grid__card--offers .offers-card {
+  height: 100%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../images/bg-offers.png);
+}
+.hero-grid__card--offers .offers-card__list {
+  margin-top: auto;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 107px 107px;
+}
+.hero-grid__card--offers .offers-card__item {
+  display: flex;
+  align-items: center;
+  padding: 16px 20px;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  border-radius: var(--radius-30);
+  background-color: var(--color-white);
+}
+.hero-grid__card--offers .offers-card__item img {
+  aspect-ratio: 1/1;
+  height: 100%;
+  width: auto;
+}
+.hero-grid__card--offers .offers-card__item-arrow {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.hero-grid__card--offers .offers-card__item-title {
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 100%;
+  letter-spacing: -0.2em;
 }
 .hero-grid__card--security {
   grid-area: security;
