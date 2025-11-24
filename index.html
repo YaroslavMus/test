@@ -1,261 +1,344 @@
 <!DOCTYPE html>
 <html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="./styles/normalize.css" />
+      <link rel="stylesheet" href="./styles/style.css" />
+      <title>Document</title>
+   </head>
 
-<head>
-   <meta charset="UTF-8" />
-   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   <link rel="stylesheet" href="./styles/normalize.css" />
-   <link rel="stylesheet" href="./styles/style.css" />
-   <title>Document</title>
-</head>
+   <body>
+      <header class="header">
+         <div class="header__container container">
+            <div class="header__logo">
+               <a class="header__logo-link" href="/">
+                  <img
+                     class="header__logo-img"
+                     src="./images/logo.svg"
+                     width="305"
+                     alt="logo" />
+               </a>
+            </div>
 
-<body>
-   <header class="header">
-      <div class="header__container container">
-         <div class="header__logo">
-            <a class="header__logo-link" href="/">
-               <img class="header__logo-img" src="./images/logo.svg" width="305" alt="logo" />
-            </a>
-         </div>
+            <nav class="header__nav">
+               <a class="header__nav-link active" href="#">Главная</a>
+               <a class="header__nav-link" href="#">Каталог</a>
+               <a class="header__nav-link" href="#">Бренды</a>
+               <a class="header__nav-link" href="#">Доставка и оплата</a>
+               <a class="header__nav-link" href="#">Помощь</a>
+               <a class="header__nav-link" href="#">Компания</a>
+            </nav>
 
-         <nav class="header__nav">
-            <a class="header__nav-link active" href="#">Главная</a>
-            <a class="header__nav-link" href="#">Каталог</a>
-            <a class="header__nav-link" href="#">Бренды</a>
-            <a class="header__nav-link" href="#">Доставка и оплата</a>
-            <a class="header__nav-link" href="#">Помощь</a>
-            <a class="header__nav-link" href="#">Компания</a>
-         </nav>
-
-         <div class="header__actions">
-            <a class="header__actions-link" href="#"></a>
-            <a class="header__actions-link" href="#"></a>
-            <a class="header__actions-link" href="#"></a>
-         </div>
-      </div>
-   </header>
-
-   <main>
-      <section class="hero">
-         <div class="container">
-            <div class="hero-grid">
-               <article class="hero-grid__card hero-grid__card--main">
-                  <div class="hero-main">
-                     <div class="hero-main__top">
-                        <div class="hero-main__text">
-                           <h1 class="hero-main__title">
-                              Интернет-магазин оборудования
-                              <br />
-                              для защиты криптоактивов
-                           </h1>
-                           <!-- <a href="/catalog" class="hero-main__button">
-                                 <span>В каталог</span>
-                                 <span class="hero-main__button-icon">↗</span>
-                              </a> -->
-                        </div>
-                        <p class="hero-main__subtitle">
-                           Cryptoro – официальный реселлер,
-                           <br />
-                           самый большой выбор в России
-                        </p>
-                     </div>
-                     <div class="hero-main__bottom">
-                        <div class="hero-main__stats">
-                           <div class="hero-main__stat">
-                              <span class="hero-main__stat-value">10+</span>
-                              <span class="hero-main__stat-label">
-                                 лет на рынке
-                              </span>
-                           </div>
-                           <div class="hero-main__stat">
-                              <span class="hero-main__stat-value">50+</span>
-                              <span class="hero-main__stat-label">
-                                 брендов
-                              </span>
-                           </div>
-                        </div>
-
-                        <ul class="hero-main__devices">
-                           <li class="hero-main__device">
-                              <img src="/img/device-1.png" alt="Устройство 1" />
-                           </li>
-                           <li class="hero-main__device">
-                              <img src="/img/device-2.png" alt="Устройство 2" />
-                           </li>
-                           <li class="hero-main__device">
-                              <img src="/img/device-3.png" alt="Устройство 3" />
-                           </li>
-                           <li class="hero-main__device">
-                              <img src="/img/device-4.png" alt="Устройство 4" />
-                           </li>
-                           <li class="hero-main__device">
-                              <img src="/img/device-5.png" alt="Устройство 5" />
-                           </li>
-                           <li class="hero-main__device">
-                              <img src="/img/device-6.png" alt="Устройство 6" />
-                           </li>
-                        </ul>
-                     </div>
-                  </div>
-               </article>
-               <article class="hero-grid__card hero-grid__card--offers">
-                  <div class="offers-card">
-                     <div class="offers-card__top">
-                        <span class="offers-card__label">
-                           Выгодные предложения
-                        </span>
-
-                        <div class="offers-card__logo">
-                           <!-- сюда вставь svg логотипа -->
-                           <img src="/img/logo-small.svg" alt="" />
-                        </div>
-                     </div>
-
-                     <div class="offers-card__list">
-                        <a href="#" class="offers-card__item">
-                           <img class="offers-card__item-img" src="./images/card-fles.png" alt="" />
-                           <div class="offers-card__item-info">
-                              <div class="offers-card__item-title">
-                                 Аппаратный кошелёк
-                                 <br />
-                                 SecuX Nifty NFT
-                              </div>
-                              <div class="offers-card__item-price">
-                                 24 490 ₽
-                              </div>
-                           </div>
-                           <span class="offers-card__item-arrow">↗</span>
-                        </a>
-
-                        <a href="#" class="offers-card__item">
-                           <img class="offers-card__item-img" src="/img/product-2.png" alt="" />
-                           <div class="offers-card__item-info">
-                              <div class="offers-card__item-title">
-                                 Устройство для записи seed фразы Cryptotag
-                                 Thor
-                              </div>
-                              <div class="offers-card__item-price">
-                                 14 490 ₽
-                              </div>
-                           </div>
-                           <span class="offers-card__item-arrow">↗</span>
-                        </a>
-
-                        <a href="#" class="offers-card__item">
-                           <img class="offers-card__item-img" src="/img/product-3.png" alt="" />
-                           <div class="offers-card__item-info">
-                              <div class="offers-card__item-title">
-                                 Аппаратный ключ Yubikey 5C Nano
-                              </div>
-                              <div class="offers-card__item-price">
-                                 2 490 ₽
-                              </div>
-                           </div>
-                           <span class="offers-card__item-arrow">↗</span>
-                        </a>
-
-                        <a href="#" class="offers-card__item">
-                           <img class="offers-card__item-img" src="/img/product-4.png" alt="" />
-                           <div class="offers-card__item-info">
-                              <div class="offers-card__item-title">
-                                 Аппаратный кошелёк Trezor T Black
-                              </div>
-                              <div class="offers-card__item-price">
-                                 8 490 ₽
-                              </div>
-                           </div>
-                           <span class="offers-card__item-arrow">↗</span>
-                        </a>
-                     </div>
-                  </div>
-               </article>
-               <article class="hero-grid__card hero-grid__card--universal">
-                  <div class="universal-card">
-                     <div class="universal-card-content">
-                        <h3 class="universal-card__title">
-                           Защита учётных записей
-                        </h3>
-                        <img class="universal-card__image" src="./images/card-fles.png" alt="" />
-                     </div>
-                  </div>
-                  <a href="#" class="btn-arrow">
-                     <span class="btn-arrow__icon"></span>
-                  </a>
-               </article>
-               <article class="hero-grid__card hero-grid__card--social">
-                  <div class="social-card">
-                     <div class="social-card__top">
-                        <span class="social-card__label">
-                           Социальные сети
-                        </span>
-
-                        <div class="social-card__logo">
-                           <img src="/img/logo-small.svg" alt="" />
-                        </div>
-                     </div>
-
-                     <img class="social-card__image" src="/img/social-cube.png" alt="Социальные сети" />
-
-                     <div class="social-card__bottom">
-                        <div class="social-card__icons">
-                           <a href="#" class="social-card__icon">
-                              <img src="/img/telegram.svg" alt="Telegram" />
-                           </a>
-                           <a href="#" class="social-card__icon">
-                              <img src="/img/youtube.svg" alt="YouTube" />
-                           </a>
-                        </div>
-
-                        <a href="mailto:shop@cryptoro.ru" class="social-card__email">
-                           shop@cryptoro.ru
-                        </a>
-                     </div>
-                  </div>
-               </article>
-               <article class="hero-grid__card hero-grid__card--articles">
-                  <div class="articles-card">
-                     <div class="articles-card__top">
-                        <span class="articles-card__label">
-                           Актуальные статьи
-                        </span>
-
-                        <button class="articles-card__icon" type="button" aria-label="Все статьи">
-                           <!-- svg-иконка или картинка -->
-                           <img src="/img/icon-articles.svg" alt="" />
-                        </button>
-                     </div>
-
-                     <div class="articles-card__bottom">
-                        <a href="#" class="articles-card__link">
-                           <span class="articles-card__link-icon">↗</span>
-                           <span class="articles-card__link-text">
-                              Читать
-                           </span>
-                        </a>
-
-                        <div class="articles-card__image-wrap">
-                           <img class="articles-card__image" src="/img/article-preview.png" alt="Актуальная статья" />
-                        </div>
-                     </div>
-                  </div>
-               </article>
-               <article class="hero-grid__card hero-grid__card--universal">
-                  <div class="universal-card">
-                     <div class="universal-card-content">
-                        <h3 class="universal-card__title">
-                           Хранение паролей и seed-фраз
-                        </h3>
-                        <img class="universal-card__image" src="./images/card-unver.png" alt="" />
-                     </div>
-                  </div>
-                  <a href="#" class="btn-arrow">
-                     <span class="btn-arrow__icon"></span>
-                  </a>
-               </article>
+            <div class="header__actions">
+               <a class="header__actions-link" href="#">
+                  <svg
+                     width="26"
+                     height="26"
+                     viewBox="0 0 26 26"
+                     fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                     <path
+                        d="M10.4542 2.08984C9.14694 2.09054 7.85804 2.39793 6.69112 2.98729C5.52421 3.57665 4.51183 4.43154 3.73536 5.48327C2.95889 6.535 2.43999 7.75422 2.22035 9.04294C2.00072 10.3317 2.08648 11.6539 2.47075 12.9035C2.85501 14.153 3.52706 15.295 4.43289 16.2376C5.33871 17.1802 6.45304 17.8972 7.68631 18.3309C8.91957 18.7646 10.2374 18.9029 11.5338 18.7347C12.8303 18.5665 14.0692 18.0965 15.151 17.3625L20.3157 22.5231C20.4591 22.677 20.6321 22.8005 20.8243 22.8861C21.0165 22.9718 21.224 23.0178 21.4344 23.0215C21.6448 23.0253 21.8538 22.9866 22.0489 22.9077C22.244 22.8289 22.4213 22.7116 22.5701 22.5628C22.7189 22.414 22.8362 22.2368 22.915 22.0417C22.9938 21.8466 23.0325 21.6376 23.0288 21.4272C23.0251 21.2168 22.979 21.0093 22.8934 20.8171C22.8077 20.6249 22.6843 20.4519 22.5303 20.3084L17.3698 15.1437C18.2235 13.8872 18.7186 12.4217 18.8019 10.9048C18.8851 9.38797 18.5533 7.87712 17.8421 6.53472C17.131 5.19232 16.0673 4.06916 14.7656 3.28599C13.4639 2.50283 11.9734 2.08929 10.4542 2.08984ZM5.23102 10.447C5.23102 9.06171 5.78133 7.73316 6.76087 6.75362C7.74041 5.77407 9.06896 5.22377 10.4542 5.22377C11.8395 5.22377 13.1681 5.77407 14.1476 6.75362C15.1272 7.73316 15.6775 9.06171 15.6775 10.447C15.6775 11.8323 15.1272 13.1608 14.1476 14.1404C13.1681 15.1199 11.8395 15.6702 10.4542 15.6702C9.06896 15.6702 7.74041 15.1199 6.76087 14.1404C5.78133 13.1608 5.23102 11.8323 5.23102 10.447Z"
+                        fill="white" />
+                  </svg>
+               </a>
+               <a class="header__actions-link" href="#">
+                  <svg
+                     width="22"
+                     height="21"
+                     viewBox="0 0 22 21"
+                     fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                     <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M14.9631 0C18.7051 0 21.2143 3.77156 21.2143 7.28367C21.2143 14.4129 10.7969 20.25 10.6071 20.25C10.4174 20.25 0 14.4129 0 7.28367C0 3.77156 2.50918 0 6.25114 0C8.39025 0 9.79511 1.14539 10.6071 2.16548C11.4192 1.14539 12.824 0 14.9631 0Z"
+                        fill="white" />
+                  </svg>
+               </a>
+               <a class="header__actions-link" href="#">
+                  <svg
+                     width="22"
+                     height="22"
+                     viewBox="0 0 22 22"
+                     fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                     <path
+                        d="M0.901863 0C0.662674 0 0.433282 0.0931281 0.26415 0.258897C0.0950176 0.424666 0 0.649496 0 0.883929C0 1.11836 0.0950176 1.34319 0.26415 1.50896C0.433282 1.67473 0.662674 1.76786 0.901863 1.76786H1.34558C1.54141 1.76819 1.73181 1.83099 1.88801 1.94676C2.04421 2.06254 2.15771 2.225 2.21137 2.40959L5.07208 12.2212C5.23388 12.7749 5.57521 13.2619 6.04447 13.6086C6.51373 13.9553 7.0854 14.1428 7.67305 14.1429H15.9143C16.4551 14.1429 16.9836 13.9842 17.4314 13.687C17.8793 13.3898 18.226 12.968 18.4269 12.4758L21.0856 5.95945C21.1949 5.69131 21.2355 5.40101 21.2039 5.11393C21.1723 4.82686 21.0694 4.55173 20.9043 4.31261C20.7391 4.0735 20.5168 3.87766 20.2566 3.74223C19.9964 3.6068 19.7063 3.5359 19.4117 3.53571H4.41552L3.94475 1.92343C3.78336 1.36969 3.44244 0.88249 2.97352 0.535478C2.50459 0.188466 1.93315 0.000502722 1.34558 0H0.901863ZM8.11677 21.2143C8.47207 21.2143 8.82389 21.1457 9.15215 21.0124C9.48041 20.8792 9.77867 20.6838 10.0299 20.4376C10.2811 20.1914 10.4804 19.899 10.6164 19.5773C10.7524 19.2556 10.8224 18.9107 10.8224 18.5625C10.8224 18.2143 10.7524 17.8694 10.6164 17.5477C10.4804 17.226 10.2811 16.9336 10.0299 16.6874C9.77867 16.4412 9.48041 16.2458 9.15215 16.1126C8.82389 15.9793 8.47207 15.9107 8.11677 15.9107C7.3992 15.9107 6.71102 16.1901 6.20363 16.6874C5.69623 17.1847 5.41118 17.8592 5.41118 18.5625C5.41118 19.2658 5.69623 19.9403 6.20363 20.4376C6.71102 20.9349 7.3992 21.2143 8.11677 21.2143ZM15.3317 21.2143C15.687 21.2143 16.0388 21.1457 16.3671 21.0124C16.6953 20.8792 16.9936 20.6838 17.2448 20.4376C17.496 20.1914 17.6953 19.899 17.8313 19.5773C17.9673 19.2556 18.0373 18.9107 18.0373 18.5625C18.0373 18.2143 17.9673 17.8694 17.8313 17.5477C17.6953 17.226 17.496 16.9336 17.2448 16.6874C16.9936 16.4412 16.6953 16.2458 16.3671 16.1126C16.0388 15.9793 15.687 15.9107 15.3317 15.9107C14.6141 15.9107 13.9259 16.1901 13.4185 16.6874C12.9111 17.1847 12.6261 17.8592 12.6261 18.5625C12.6261 19.2658 12.9111 19.9403 13.4185 20.4376C13.9259 20.9349 14.6141 21.2143 15.3317 21.2143Z"
+                        fill="white" />
+                  </svg>
+               </a>
+               <a class="header__actions-link burger active" href="#">
+                  <span></span>
+                  <span></span>
+               </a>
             </div>
          </div>
-      </section>
-   </main>
-</body>
+      </header>
 
+      <main>
+         <section class="hero">
+            <div class="container">
+               <div class="hero-grid">
+                  <article class="hero-grid__card hero-grid__card--main">
+                     <div class="hero-main">
+                        <div class="hero-main__top">
+                           <div class="hero-main__text">
+                              <h1 class="hero-main__title">
+                                 <span>
+                                    Интернет-магазин оборудования для защиты
+                                    криптоактивов
+                                 </span>
+                                 <a href="/catalog" class="hero-main__button">
+                                    <span
+                                       class="hero-main__button-icon arrow"></span>
+                                    <span>В каталог</span>
+                                 </a>
+                              </h1>
+                           </div>
+                           <p class="hero-main__subtitle">
+                              Cryptoro – официальный реселлер, самый большой
+                              выбор в России
+                           </p>
+                        </div>
+                        <div class="hero-main__bottom">
+                           <div class="hero-main__stats">
+                              <div class="hero-main__stat">
+                                 <span class="hero-main__stat-value">10+</span>
+                                 <span class="hero-main__stat-label">
+                                    лет на рынке
+                                 </span>
+                              </div>
+                              <div class="hero-main__stat">
+                                 <span class="hero-main__stat-value">50+</span>
+                                 <span class="hero-main__stat-label">
+                                    брендов
+                                 </span>
+                              </div>
+                           </div>
+
+                           <ul class="hero-main__devices">
+                              <li class="hero-main__device" style="--i: 1">
+                                 <img
+                                    src="./images/deviceCard/item-1.png"
+                                    alt="Устройство 1" />
+                              </li>
+                              <li class="hero-main__device" style="--i: 2">
+                                 <img
+                                    src="./images/deviceCard/item-2.png"
+                                    alt="Устройство 2" />
+                              </li>
+                              <li class="hero-main__device" style="--i: 3">
+                                 <img
+                                    src="./images/deviceCard/item-3.png"
+                                    alt="Устройство 3" />
+                              </li>
+                              <li class="hero-main__device" style="--i: 4">
+                                 <img
+                                    src="./images/deviceCard/item-4.png"
+                                    alt="Устройство 4" />
+                              </li>
+                              <li class="hero-main__device" style="--i: 5">
+                                 <img
+                                    src="./images/deviceCard/item-5.png"
+                                    alt="Устройство 5" />
+                              </li>
+                              <li class="hero-main__device" style="--i: 6">
+                                 <img
+                                    src="./images/deviceCard/item-6.png"
+                                    alt="Устройство 6" />
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </article>
+                  <article class="hero-grid__card hero-grid__card--offers">
+                     <div class="offers-card">
+                        <div class="offers-card__top">
+                           <span class="offers-card__label">
+                              Выгодные предложения
+                           </span>
+
+                           <div class="offers-card__logo">
+                              <img src="./images/logo-min.svg" alt="" />
+                           </div>
+                        </div>
+
+                        <div class="offers-card__list">
+                           <a href="#" class="offers-card__item">
+                              <img
+                                 class="offers-card__item-img"
+                                 src="./images/offersCard/item.png"
+                                 alt="" />
+                              <div class="offers-card__item-info">
+                                 <div class="offers-card__item-title">
+                                    Аппаратный кошелёк SecuX Nifty NFT
+                                 </div>
+                                 <div class="offers-card__item-price">
+                                    24 490 ₽
+                                 </div>
+                              </div>
+                              <span
+                                 class="offers-card__item-arrow arrow"></span>
+                           </a>
+
+                           <a href="#" class="offers-card__item">
+                              <img
+                                 class="offers-card__item-img"
+                                 src="./images/offersCard/item-2.png"
+                                 alt="" />
+                              <div class="offers-card__item-info">
+                                 <div class="offers-card__item-title">
+                                    Устройство для записи seed фразы Cryptotag
+                                    Thor
+                                 </div>
+                                 <div class="offers-card__item-price">
+                                    14 490 ₽
+                                 </div>
+                              </div>
+                              <span
+                                 class="offers-card__item-arrow arrow"></span>
+                           </a>
+
+                           <a href="#" class="offers-card__item">
+                              <img
+                                 class="offers-card__item-img"
+                                 src="./images/offersCard/item-3.png"
+                                 alt="" />
+                              <div class="offers-card__item-info">
+                                 <div class="offers-card__item-title">
+                                    Аппаратный ключ Yubikey 5C Nano
+                                 </div>
+                                 <div class="offers-card__item-price">
+                                    2 490 ₽
+                                 </div>
+                              </div>
+                              <span
+                                 class="offers-card__item-arrow arrow"></span>
+                           </a>
+
+                           <a href="#" class="offers-card__item">
+                              <img
+                                 class="offers-card__item-img"
+                                 src="./images/offersCard/item-4.png"
+                                 alt="" />
+                              <div class="offers-card__item-info">
+                                 <div class="offers-card__item-title">
+                                    Аппаратный кошелёк Trezor T Black
+                                 </div>
+                                 <div class="offers-card__item-price">
+                                    8 490 ₽
+                                 </div>
+                              </div>
+                              <span
+                                 class="offers-card__item-arrow arrow"></span>
+                           </a>
+                        </div>
+                     </div>
+                  </article>
+                  <article class="hero-grid__card hero-grid__card--universal">
+                     <div class="universal-card">
+                        <div class="universal-card-content">
+                           <h3 class="universal-card__title">
+                              Защита учётных записей
+                           </h3>
+                           <img
+                              class="universal-card__image"
+                              src="./images/card-fles.png"
+                              alt="" />
+                        </div>
+                     </div>
+                     <a href="#" class="btn-arrow">
+                        <span class="btn-arrow__icon"></span>
+                     </a>
+                  </article>
+                  <article class="hero-grid__card hero-grid__card--social">
+                     <div class="social-card">
+                        <div class="social-card__top">
+                           <span class="social-card__label">
+                              Социальные сети
+                           </span>
+
+                           <div class="social-card__logo">
+                              <img src="./images/logo-min.svg" alt="" />
+                           </div>
+                        </div>
+
+                        <div class="social-card__bottom">
+                           <a href="#" class="social-card__icon">
+                              <img
+                                 src="./images/socialCard/icon-telegram.svg"
+                                 alt="Telegram" />
+                           </a>
+                           <a href="#" class="social-card__icon">
+                              <img
+                                 src="./images/socialCard/icon-youtube.svg"
+                                 alt="YouTube" />
+                           </a>
+                           <a
+                              href="mailto:shop@cryptoro.ru"
+                              class="social-card__email">
+                              shop@cryptoro.ru
+                           </a>
+                        </div>
+                     </div>
+                  </article>
+                  <article class="hero-grid__card hero-grid__card--articles">
+                     <div class="articles-card">
+                        <div class="articles-card__top">
+                           <span class="articles-card__label">
+                              Актуальные статьи
+                           </span>
+
+                           <div class="articles-card__icon">
+                              <img
+                                 src="./images/articlesCard/icon-articles.svg"
+                                 alt="" />
+                           </div>
+                        </div>
+
+                        <div class="articles-card__bottom">
+                           <a href="#" class="articles-card__link">
+                              <span
+                                 class="articles-card__link-icon arrow"></span>
+                              <span class="articles-card__link-text">
+                                 Читать
+                              </span>
+                           </a>
+
+                           <div class="articles-card__image-wrap">
+                              <img
+                                 class="articles-card__image"
+                                 src="./images/articlesCard/images.png"
+                                 alt="Актуальная статья" />
+                           </div>
+                        </div>
+                     </div>
+                  </article>
+                  <article class="hero-grid__card hero-grid__card--universal">
+                     <div class="universal-card">
+                        <div class="universal-card-content">
+                           <h3 class="universal-card__title">
+                              Хранение паролей и seed-фраз
+                           </h3>
+                           <img
+                              class="universal-card__image"
+                              src="./images/card-unver.png"
+                              alt="" />
+                        </div>
+                     </div>
+                     <a href="#" class="btn-arrow">
+                        <span class="btn-arrow__icon"></span>
+                     </a>
+                  </article>
+                  <p class="hero-grid__text">
+                     Физические устройства из стали и титана надёжнее бумаги и
+                     облачных сервисов
+                  </p>
+               </div>
+            </div>
+         </section>
+      </main>
+   </body>
 </html>
